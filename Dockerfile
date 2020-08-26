@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY bin /app
 
-ENTRYPOINT ["/app/helper-reset-password"]
+ENTRYPOINT ["/app/helper-templates"]

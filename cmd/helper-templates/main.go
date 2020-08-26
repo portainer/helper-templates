@@ -46,7 +46,7 @@ func main() {
 		Templates: result,
 	}
 
-	newTemplateJsonData, err := json.Marshal(newTemplateFileContent)
+	newTemplateJsonData, err := json.MarshalIndent(newTemplateFileContent, "", "\t")
 	if err != nil {
 		log.Fatalf("Unable to create new template file, err: %s", err)
 	}
